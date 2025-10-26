@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  snappic-app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./data.json:/app/data.json
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/images"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
