@@ -1,1 +1,63 @@
+# Python
 snappic/__pycache__/
+snappic/venv/
+snappic/uploads/
+*.pyc
+__pycache__/
+.env
+
+# Java/Maven
+snappic-java-angular/backend/target/
+snappic-java-angular/backend/.mvn/
+snappic-java-angular/backend/mvnw
+snappic-java-angular/backend/mvnw.cmd
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.classpath
+.project
+.settings/
+.mvn/
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Node.js/Angular
+snappic-java-angular/frontend/node_modules/
+snappic-java-angular/frontend/dist/
+snappic-java-angular/frontend/.angular/
+snappic-java-angular/frontend/.nx/cache/
+snappic-java-angular/frontend/package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
